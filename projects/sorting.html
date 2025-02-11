@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="/index.html">Jinal Dave</a> </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jinal Dave</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+   
+    <section id="project-paper">
+      <h1 class="title">Sorting Visualizer: A Web-Based Algorithm Visualization Tool</h1>
+      
+      <div class="paper-content">
+    
+        <p>
+          The <strong>Sorting Visualizer</strong> is an <strong>interactive web tool</strong> that visually demonstrates 
+          sorting algorithms like <strong>Bubble Sort, Selection Sort, Merge Sort, and Quick Sort</strong>. 
+          Built with <strong>React.js</strong>, it dynamically generates and sorts an array of bars, allowing users to 
+          <strong>adjust the array size, speed, and algorithm selection</strong>. Since sorting is essential in 
+          <strong>computer science and data processing</strong>, this tool provides an engaging way to understand 
+          algorithm behavior through real-time animations.
+        </p>
+    
+        <h2>🛠️ Technologies Used</h2>
+        <ul>
+          <li>⚛ <strong>React.js</strong> – Provides a component-based UI structure.</li>
+          <li>📑 <strong>HTML5</strong> – Used for structuring the interface.</li>
+          <li>🎨 <strong>CSS3 (Flexbox & Custom Styles)</strong> – Enhances the visual appeal and responsiveness.</li>
+          <li>📜 <strong>JavaScript (ES6+)</strong> – Implements the sorting algorithms and user interactions.</li>
+          <li>🔄 <strong>React State Management</strong> – Handles real-time array updates and animations.</li>
+        </ul>
+    
+        <h2>📂 Project Structure</h2>
+        <h3>1️⃣ index.html (Root HTML Page)</h3>
+        <p>Contains the <strong>root <div></strong> where the React application is mounted.</p>
+    
+        <h3>2️⃣ App.js (Main Application Component)</h3>
+        <p>Serves as the <strong>entry point</strong> for the Sorting Visualizer.</p>
+    
+        <h3>3️⃣ SortingVisualizer.js (Sorting Visualizer Component)</h3>
+        <p>Manages <strong>array generation, sorting controls, and animations</strong>.</p>
+    
+        <h3>4️⃣ SortingAlgorithms.js (Sorting Logic)</h3>
+        <p>Implements the sorting algorithms:
+          <ul>
+            <li>🔵 <strong>Bubble Sort</strong> – Step-by-step swapping of adjacent elements.</li>
+            <li>🟢 <strong>Selection Sort</strong> – Finds the smallest element and places it correctly.</li>
+            <li>🟡 <strong>Merge Sort</strong> – Splits the array and merges it back efficiently.</li>
+            <li>🔴 <strong>Quick Sort</strong> – Uses pivot-based partitioning for fast sorting.</li>
+          </ul>
+        </p>
+    
+        <h2>🚀 Features & Functionality</h2>
+        <ul>
+          <li>📏 <strong>Adjustable Array Size</strong> – Users can change the number of elements.</li>
+          <li>⏳ <strong>Sorting Speed Control</strong> – Slow or fast sorting visualization.</li>
+          <li>🎛️ <strong>Algorithm Selection</strong> – Users can choose a sorting algorithm.</li>
+          <li>📊 <strong>Real-Time Visualization</strong> – Sorting is animated step-by-step, showing how elements are swapped.</li>
+          <li>🌈 <strong>Color Coding</strong> – Changes dynamically to indicate active comparisons.</li>
+        </ul>
+    
+        <h2>🔮 Future Enhancements</h2>
+        <ul>
+          <li>🔄 Side-by-Side Algorithm Comparison – Show multiple sorting methods simultaneously.</li>
+          <li>📊 Performance Analysis – Display time complexity of each algorithm dynamically.</li>
+          <li>⏸️ Pause & Resume Sorting – Allow users to pause an ongoing sort.</li>
+          <li>🌙 Dark Mode Support – Add an alternative theme for better accessibility.</li>
+        </ul>
+    
+      </div>
+    </section>    
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jinaldave03@gmail.com">jcd47@njit.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jinal-dave-75594b247/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="/index.html#about">About</a></li>
+           <li><a href="/index.html#experience">Experience</a></li>
+           <li><a href="/index.html#projects">Projects</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jinal Dave. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

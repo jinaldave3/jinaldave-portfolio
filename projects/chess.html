@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess game</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="/index.html">Jinal Dave</a> </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jinal Dave</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+   
+    <section id="project-paper">
+      <h1 class="title">Java Chess Game: A Desktop-Based Chess Application</h1>
+      
+      <div class="paper-content">
+        
+        <p>
+          The <strong>Java Chess Game</strong> is a <strong>desktop-based chess application</strong> developed using 
+          <strong>Java Swing</strong>. It provides an <strong>interactive and visually appealing chess-playing experience</strong>, 
+          supporting <strong>player vs. player mode, move validation, an undo feature, and standard chess rules</strong>. 
+          The game includes an <strong>object-oriented architecture</strong> where each chess piece is an independent class with its 
+          own movement logic.
+        </p>
+    
+        
+        
+    
+        <h2>Technologies Used</h2>
+        <ul>
+          <li>☕ <strong>Java (JDK 8+)</strong> – Core programming language.</li>
+          <li>🎨 <strong>Java Swing (JFrame, JPanel, Graphics2D)</strong> – GUI rendering and user interactions.</li>
+          <li>🖱️ <strong>MouseListeners</strong> – Handles piece selection and movement.</li>
+        </ul>
+    
+        <h2>Project Structure</h2>
+        <h3>1️⃣ Main.java (Game Launcher)</h3>
+        <p>Initializes the <strong>game window</strong> and sets up the <strong>board interface</strong>.</p>
+    
+        <h3>2️⃣ Board.java (Game Board Logic)</h3>
+        <p>Defines an <strong>8x8 chessboard</strong>, manages <strong>piece placement</strong>, and tracks moves.</p>
+    
+        <h3>3️⃣ Piece.java (Base Class for Chess Pieces)</h3>
+        <p>Common attributes for <strong>position, movement rules, and image representation</strong>.</p>
+    
+        <h3>4️⃣ Individual Piece Classes (Pawn.java, Knight.java, Bishop.java, etc.)</h3>
+        <p>Each piece has <strong>unique movement logic</strong> following chess rules.</p>
+    
+        <h3>5️⃣ Game.java (Game State Manager)</h3>
+        <p>Handles <strong>turn-based gameplay, checkmate detection, and move history</strong>.</p>
+    
+        <h2>Features</h2>
+        <ul>
+          <li>✅ <strong>Player vs. Player Mode</strong> – Interactive chess matches.</li>
+          <li>✅ <strong>Move Validation</strong> – Ensures legal chess moves.</li>
+          <li>✅ <strong>Undo Feature</strong> – Players can revert their last move.</li>
+          <li>✅ <strong>Graphical Chessboard</strong> – Clean UI with Java Swing.</li>
+        </ul>
+    
+        <h2>Limitations & Challenges</h2>
+        <p>
+          🚫 <strong>No AI Opponent</strong> – Only supports player vs. player mode.<br>
+          🛑 <strong>No Online Multiplayer</strong> – Does not include networked gameplay.<br>
+          ⚠️ <strong>No Move Timer</strong> – Players have unlimited time for each move.
+        </p>
+    
+        <h2>Conclusion</h2>
+        <p>
+          The <strong>Java Chess Game</strong> is a <strong>functional desktop chess application</strong> that provides an engaging 
+          and interactive experience. With further enhancements such as AI gameplay and multiplayer mode, it has the potential 
+          to become a fully-featured digital chess game.
+        </p>
+      </div>
+    </section>    
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jinaldave03@gmail.com">jcd47@njit.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jinal-dave-75594b247/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="/index.html#about">About</a></li>
+           <li><a href="/index.html#experience">Experience</a></li>
+           <li><a href="/index.html#projects">Projects</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jinal Dave. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

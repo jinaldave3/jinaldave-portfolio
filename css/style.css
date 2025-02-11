@@ -381,6 +381,16 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+.about-containers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+/* Reverse order to make new projects appear at the top */
+.about-containers > * {
+  order: -1;
+}
 
 /* CONTACT */
 

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin Price Comparision App</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="/index.html">Jinal Dave</a> </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jinal Dave</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="project-paper">
+      <h1 class="title">Bitcoin Price Comparison Tool: A React-Based Web Application</h1>
+    
+      <div class="paper-content">
+        
+        <p>
+          Cryptocurrency trading requires <strong>real-time price tracking</strong> to ensure users get the best rates when buying Bitcoin (BTC). 
+          The <strong>Bitcoin Price Comparison Tool</strong> is a <strong>React-based web application</strong> that enables users to compare BTC prices 
+          from multiple providers dynamically.
+        </p>
+        <p>
+          This tool <strong>fetches real-time BTC prices</strong>, sorts the results, and displays them in an <strong>interactive and user-friendly interface</strong>. 
+          The application leverages <strong>TypeScript, React.js, Axios, and Node.js</strong> to ensure <strong>fast performance and accurate pricing data</strong>.
+        </p>
+    
+        <h2>🎯 Objectives</h2>
+        <ul>
+          <li>🚀 Provide an <strong>efficient and user-friendly</strong> BTC price comparison tool.</li>
+          <li>💰 Fetch and display <strong>real-time Bitcoin conversion rates</strong> from multiple providers.</li>
+          <li>🔢 Allow users to <strong>input an amount</strong> and receive dynamically updated rates.</li>
+          <li>⚡ Ensure <strong>high performance, reliability, and smooth UI interactions</strong>.</li>
+        </ul>
+    
+        <h2>🛠️Technologies Used</h2>
+    
+        <h3>🖥️ Frontend Development</h3>
+        <ul>
+          <li>⚛️ <strong>React.js + TypeScript</strong> – Component-based UI structure.</li>
+          <li>🎨 <strong>Tailwind CSS</strong> – Provides modern styling and responsive design.</li>
+          <li>🔀 <strong>Lodash</strong> – Used for sorting price data efficiently.</li>
+          <li>🔄 <strong>Debounced Effect</strong> – Ensures smooth API calls without excessive requests.</li>
+        </ul>
+    
+        <h3>🌍 Backend & Data Fetching</h3>
+        <ul>
+          <li>🌐 <strong>Aircode (Node.js Serverless Functions)</strong> – Handles backend logic for fetching BTC rates.</li>
+          <li>📡 <strong>Axios</strong> – Fetches real-time data from external APIs.</li>
+          <li>⚙️ <strong>Node.js (v18)</strong> – Provides runtime support for serverless functions.</li>
+        </ul>
+    
+        <h3>🛠️ Development Tools & Configuration</h3>
+        <ul>
+          <li>📦 <strong>TypeScript</strong> – Ensures code maintainability and type safety.</li>
+          <li>🔧 <strong>ES2022 (via TypeScript Config)</strong> – Uses modern JavaScript features.</li>
+          <li>⚡ <strong>Vite</strong> – Optimized development and build tool for React.</li>
+        </ul>
+    
+        <h2>📂 Project Structure</h2>
+    
+        <h3>🖥️ Frontend Components</h3>
+        <ul>
+          <li>🏠 <strong>App.tsx</strong> – Main UI logic, fetches BTC offers, and manages state.</li>
+          <li>💲 <strong>AmountInput.tsx</strong> – User input field for entering the amount.</li>
+          <li>🔄 <strong>LoadingSkeleton.tsx</strong> – Displays a loading animation while fetching data.</li>
+          <li>📊 <strong>ResultRow.tsx</strong> – Displays BTC offers from different providers.</li>
+        </ul>
+    
+        <h3>🖧 Backend API Handling</h3>
+        <ul>
+          <li>🌍 <strong>offers.ts</strong> – Fetches real-time BTC offers from external providers.</li>
+          <li>🛢️ <strong>cachedValues.ts</strong> – Stores previously fetched BTC rates for efficiency.</li>
+          <li>🌍 <strong>providers.ts</strong> – Defines supported BTC exchange providers.</li>
+          <li>🛠️ <strong>cache.ts</strong> – Implements caching logic for API responses.</li>
+        </ul>
+    
+        <h3>⚙️ Configuration Files</h3>
+        <ul>
+          <li>📝 <strong>aircode.config.json</strong> – Configures serverless runtime (Node.js v18).</li>
+          <li>📦 <strong>package.json</strong> – Lists dependencies like Axios, Aircode, TypeScript.</li>
+          <li>🔧 <strong>tsconfig.json</strong> – Defines TypeScript compiler settings for ES2022.</li>
+        </ul>
+    
+        <h2>🚀 Features & Functionality</h2>
+        <ul>
+          <li>🔍 <strong>Real-Time BTC Price Comparison</strong> – Fetches and sorts BTC rates dynamically.</li>
+          <li>📥 <strong>User Input for Custom Amounts</strong> – Adjust BTC conversion amount easily.</li>
+          <li>🎛 <strong>Interactive UI</strong> – Tailwind CSS ensures a smooth and modern design.</li>
+          <li>🔄 <strong>Optimized API Requests</strong> – Uses debouncing to prevent excessive API calls.</li>
+          <li>⚡ <strong>Serverless Backend (Aircode)</strong> – Ensures efficient data retrieval.</li>
+          <li>📡 <strong>Cached Values for Performance</strong> – Stores previous API responses to speed up loading.</li>
+        </ul>
+      </div>
+    </section>
+    
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jinaldave03@gmail.com">jcd47@njit.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jinal-dave-75594b247/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="/index.html#about">About</a></li>
+           <li><a href="/index.html#experience">Experience</a></li>
+           <li><a href="/index.html#projects">Projects</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jinal Dave. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

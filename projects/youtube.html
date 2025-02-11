@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Home Page Frontend</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="/index.html">Jinal Dave</a> </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jinal Dave</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+   
+    <section id="project-paper">
+      <h1 class="title">YouTube Homepage Clone: Frontend Web Application</h1>  </br>
+      
+      <div class="paper-content">
+        
+        <p>
+          This project is a <strong>YouTube Homepage Clone</strong>, a web-based frontend replica of YouTube’s homepage layout and design. The project includes 
+          <strong>a responsive header, sidebar navigation, and a video preview grid</strong>. Built with <strong>HTML, CSS, and JavaScript</strong>, 
+          it delivers a visually accurate representation of YouTube’s homepage without backend functionalities such as video playback, comments, or user authentication.
+        </p>
+    
+        
+        <p>
+          With the rise of digital content consumption, YouTube has become one of the most visited platforms worldwide. The goal of this personal project is to highlight my frontend development skills by
+          <strong>mimicing the core structure of YouTube’s homepage</strong> using fundamental <strong>frontend technologies</strong> while ensuring a clean, 
+          responsive, and visually appealing user experience.
+        </p>  </br>
+    
+        <h2>Technologies Used</h2>
+        <ul>
+          <li>📄 <strong>HTML5</strong>: Structuring the page elements.</li>
+          <li>🎨 <strong>CSS3</strong>: Styling components with Flexbox and Grid layouts.</li>
+          <li>🟨 <strong>JavaScript (ES6+)</strong>: Implementing interactive elements like search and tooltips.</li>
+          <li>🔤 <strong>Google Fonts (Roboto)</strong>: Enhancing typography for a polished look.</li>
+        </ul>  </br>
+    
+        <h2>Project Structure</h2>
+        <h3>1. Header (header.css)</h3>
+        <p>
+          The <strong>header</strong> includes:
+          - YouTube logo and a hamburger menu.
+          - A <strong>search bar</strong> with button functionality and voice search.
+          - Icons for <strong>notifications, uploads, and user profile</strong>.
+        </p>
+    
+        <h3>2. Sidebar (sidebar.css)</h3>
+        <p>
+          The <strong>sidebar</strong> enables seamless navigation with links to:
+          - <strong>Home, Explore, Subscriptions, Originals, YouTube Music, and Library</strong>.
+          - Uses <strong>hover effects</strong> for better user interactivity.
+        </p>
+    
+        <h3>3. Video Grid (video.css)</h3>
+        <p>
+          The <strong>main content area</strong> displays a <strong>grid layout of video previews</strong>, each containing:
+          - <strong>Thumbnail</strong> with video duration overlay.
+          - <strong>Channel picture, video title, author, and video stats</strong>.
+          - Uses <strong>CSS Grid</strong> to adjust layout based on screen size.
+        </p>  </br>
+    
+        <h2>Responsive Design</h2>
+        <p>
+          The website adapts dynamically to different screen sizes using <strong>media queries</strong>:
+          - <strong>Large screens</strong> (4-column layout).
+          - <strong>Medium screens</strong> (3-column layout).
+          - <strong>Small screens</strong> (2-column layout).
+        </p>  </br>
+    
+        <h2>Interactivity Features</h2>
+        <ul>
+          <li>🔍 <strong>Search Bar</strong>: Users can input search queries (non-functional, purely aesthetic).</li>
+          <li>💡 <strong>Tooltips</strong>: Appear on hover over key buttons.</li>
+          <li>🖱️ <strong>Hover Effects</strong>: Sidebar navigation highlights on hover.</li>
+        </ul>  </br>
+    
+        <h2>Limitations</h2>
+        <p><ul>
+          <li> This project only includes the <strong>frontend of the YouTube homepage.</strong></li>
+          <li> No backend functionalities such as <strong>video playback, comments, user authentication, or subscriptions.</strong></li>
+          <li> The search bar and navigation links are <strong>static and do not process real data</strong>.</li>
+        </p>
+      </br>
+        
+        <p>
+          This project successfully <strong>replicates the YouTube homepage design</strong> with a structured layout and interactive components. 
+          It showcases <strong>modern frontend development techniques</strong>, including <strong>CSS Grid, and Flexbox</strong>, 
+          making it an excellent learning project for UI/UX design and responsive web development.
+        </p>
+        </br>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jinaldave03@gmail.com">jcd47@njit.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jinal-dave-75594b247/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="/index.html#about">About</a></li>
+           <li><a href="/index.html#experience">Experience</a></li>
+           <li><a href="/index.html#projects">Projects</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jinal Dave. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
