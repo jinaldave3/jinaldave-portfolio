@@ -11,7 +11,7 @@ const projects = [
     imgSrc: "./assets/sorting.png",
     githubLink: "https://github.com/jinaldave3/distributed-recommendation-system",
     readMore: "./projects/recSystem.html",
-    technologies: "⚛ React  🦺 TypeScript  🎨 Tailwind CSS  📡 Axios ⚡ Vite  🌐 Aircode"
+    technologies: "⚛ React  🎨 CSS  📦 Node.js  🚂 Express  🧠 Mock ML  📡 Axios 📊 Prometheus  📈 Grafana  🐳 Docker  🧱 Docker Compose"
   },
   {
     title: "Bitcoin Price Tracker",
