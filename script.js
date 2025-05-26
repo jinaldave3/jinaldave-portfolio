@@ -4,8 +4,15 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
-// Define your projects as an array
+
 const projects = [
+  {
+    title: "Distributed Recommendation System",
+    imgSrc: "./assets/sorting.png",
+    githubLink: "https://github.com/jinaldave3/distributed-recommendation-system",
+    readMore: "./projects/recSystem.html",
+    technologies: "⚛ React  🦺 TypeScript  🎨 Tailwind CSS  📡 Axios ⚡ Vite  🌐 Aircode"
+  },
   {
     title: "Bitcoin Price Tracker",
     imgSrc: "./assets/bitcoin.png",

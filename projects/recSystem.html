@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Book Recommendation System</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="/index.html">Jinal Dave</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jinal Dave</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="project-paper">
+      <h1 class="title">AI-Powered Book Recommendation System</h1>
+
+      <div class="paper-content">
+        <p>
+          This project is a full-stack web application that provides intelligent book recommendations. It uses a simulated AI model to return personalized suggestions based on user-selected categories and follows up with a second round of tailored suggestions after a book is clicked.
+        </p>
+
+        <h2>🎯 Objectives</h2>
+        <ul>
+          <li>Enable users to select a book category and get personalized suggestions</li>
+          <li>Allow second-level recommendations when a book is clicked</li>
+          <li>Build a clean, modern UI that works well on mobile and desktop</li>
+          <li>Integrate monitoring tools to track API request patterns</li>
+        </ul>
+
+        <h2>🛠️ Technologies Used</h2>
+
+        <h3>Frontend</h3>
+        <ul>
+          <li>React.js</li>
+          <li>Plain CSS (responsive, modern styling)</li>
+        </ul>
+
+        <h3>Backend</h3>
+        <ul>
+          <li>Node.js + Express</li>
+          <li>REST API with query parameters for category and book</li>
+        </ul>
+
+        <h3>ML Microservice</h3>
+        <ul>
+          <li>Mock logic in a standalone Node.js service</li>
+          <li>Returns hardcoded AI-style predictions</li>
+        </ul>
+
+        <h3>Monitoring</h3>
+        <ul>
+          <li>Prometheus for metrics collection</li>
+          <li>Grafana for real-time dashboard visualization</li>
+        </ul>
+
+        <h3>Deployment</h3>
+        <ul>
+          <li>Docker + Docker Compose</li>
+          <li>Multi-container orchestration for frontend, backend, ML, and monitoring</li>
+        </ul>
+
+        <h2>📂 Project Structure</h2>
+        <ul>
+          <li><strong>/frontend</strong>: React app with dropdown, predictions, and reset</li>
+          <li><strong>/backend</strong>: Express server that handles prediction logic and routes</li>
+          <li><strong>/ml_model</strong>: Node.js microservice for AI-like logic</li>
+          <li><strong>/monitoring</strong>: Configuration files for Prometheus and Grafana</li>
+          <li><strong>/deployment</strong>: Docker Compose config to run the full stack</li>
+        </ul>
+
+        <h2>🚀 Features</h2>
+        <ul>
+          <li>Category-based book suggestions</li>
+          <li>Second-round recommendations based on selected book</li>
+          <li>Monitoring with live Prometheus metrics and Grafana dashboard</li>
+          <li>Fully containerized with Docker Compose</li>
+          <li>Clean, responsive UI with a reset feature</li>
+        </ul>
+
+        <h2>📸 Screenshots</h2>
+        <ul>
+          <li>Frontend: User selects category → sees predictions</li>
+          <li>Second round: User clicks a book → sees follow-up suggestions</li>
+          <li>Grafana: Live graph of API requests per route</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="../assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:jcd47@njit.edu">jcd47@njit.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="../assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/jinal-dave-75594b247/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#experience">Experience</a></li>
+            <li><a href="/index.html#projects">Projects</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jinal Dave. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
