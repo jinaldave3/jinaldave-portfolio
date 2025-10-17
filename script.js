@@ -7,6 +7,13 @@ function toggleMenu() {
 
 const projects = [
   {
+    title: "Resume Analyzer Chrome Extension",
+    imgSrc: "./assets/resumeAnalyzer.png",
+    githubLink: "https://github.com/jinaldave3/resumeAnalyzer",
+    readMore: "./projects/resumeAnalyzer.html",
+    technologies: "💻 HTML  🎨 CSS  ⚡ JavaScript  🧩 Chrome API (Manifest V3)  🧠 LocalStorage  🔍 DOM Parsing  🧭 Content Scripts"
+  },
+  {
     title: "Distributed Recommendation System",
     imgSrc: "./assets/sorting.png",
     githubLink: "https://github.com/jinaldave3/distributed-recommendation-system",

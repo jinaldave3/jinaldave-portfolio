@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Analyzer Chrome Extension</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="/index.html">Jinal Dave</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jinal Dave</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="project-paper">
+      <h1 class="title">Resume Analyzer Chrome Extension</h1>
+
+      <div class="paper-content">
+          <p>
+          The Resume Analyzer is a Chrome extension designed to help job seekers instantly evaluate how well their resume aligns with any job description directly on platforms like LinkedIn or Indeed. Built using HTML, CSS, and JavaScript with Chrome Manifest V3, the extension allows users to upload their resume once, stores it locally using LocalStorage, and dynamically extracts job text from active pages via the chrome.scripting API. It then provides a real-time similarity score and match feedback within a clean, responsive popup interfaces, eliminating the need for external tools or manual comparisons.
+          
+        </p>
+    
+        <h2>🎯 Objectives</h2>
+        <ul>
+          <li>Enable one-click resume analysis against job descriptions</li>
+          <li>Save and persist uploaded resumes across popup reloads</li>
+          <li>Allow users to view match scores without leaving the job site</li>
+          <li>Deliver a visually minimal, intuitive, and responsive popup UI</li>
+        </ul>
+
+        <h2>🛠️ Technologies Used</h2>
+
+        <h3>Frontend (Extension UI)</h3>
+        <ul>
+          <li>HTML5, CSS3, JavaScript (Vanilla)</li>
+          <li>Custom popup with modern flat UI and CSS variables</li>
+          <li>LocalStorage for resume persistence</li>
+        </ul>
+
+        <h3>Extension APIs</h3>
+        <ul>
+          <li>Chrome Manifest V3</li>
+          <li><code>chrome.scripting</code> API for runtime DOM extraction</li>
+          <li><code>chrome.tabs</code> API for accessing active job pages</li>
+        </ul>
+
+        <h3>Analysis Logic</h3>
+        <ul>
+          <li>Simulated AI scoring algorithm (match percentage generator)</li>
+          <li>Dynamic DOM scraping to extract job descriptions</li>
+          <li>Real-time feedback rendered in popup interface</li>
+        </ul>
+
+        <h3>Design & Experience</h3>
+        <ul>
+          <li>Responsive popup layout with clear hierarchy</li>
+          <li>Dark/light-compatible color palette</li>
+          <li>Micro animations for buttons and progress feedback</li>
+        </ul>
+
+        <h2>📂 Project Structure</h2>
+        <ul>
+          <li><strong>popup.html</strong> — extension UI and structure</li>
+          <li><strong>popup.js</strong> — resume logic and Chrome API injection</li>
+          <li><strong>manifest.json</strong> — defines permissions and extension metadata</li>
+          <li><strong>background.js</strong> — initializes service worker context</li>
+          <li><strong>icons/</strong> — vector icons used across sizes</li>
+        </ul>
+
+        <h2>🚀 Features</h2>
+        <ul>
+          <li>Instant resume-to-job match scoring</li>
+          <li>Persistent resume upload (even after popup reload)</li>
+          <li>Cross-site compatibility with LinkedIn and Indeed</li>
+          <li>Local data storage (no backend dependency)</li>
+          <li>Fast, native-feeling user interface built with minimal overhead</li>
+        </ul>
+
+        <h2>💡 Future Enhancements</h2>
+        <ul>
+          <li>Integrate OpenAI API for genuine semantic resume-job matching</li>
+          <li>Add a dashboard to visualize user match history</li>
+          <li>Include a PDF preview and keyword highlighting system</li>
+        </ul>
+
+
+        
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="../assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:jcd47@njit.edu">jinaldave03@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="../assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/jinal-dave-75594b247/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#experience">Experience</a></li>
+            <li><a href="/index.html#projects">Projects</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jinal Dave. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
