@@ -7,6 +7,14 @@ function toggleMenu() {
 
 const projects = [
   {
+  title: "AI Financial Insights Dashboard",
+  imgSrc: "./assets/ai-fi-dash.png",
+  githubLink: "https://github.com/jinaldave3/ai-fi-dash",
+  readMore: "./projects/ai-fi-dash.html",
+  technologies:
+    "⚛ React.js 🎨 Tailwind CSS 📡 Axios 📈 Recharts ⚡ Vite 🟢 Node.js 🚂 Express.js 🤖 OpenAI API 💹 Finnhub API 📊 Yahoo Finance API"
+},
+  {
     title: "Resume Analyzer Chrome Extension",
     imgSrc: "./assets/resumeAnalyzer.png",
     githubLink: "https://github.com/jinaldave3/resumeAnalyzer",
@@ -20,6 +28,14 @@ const projects = [
     readMore: "./projects/recSystem.html",
     technologies: "⚛ React  🎨 CSS  📦 Node.js  🚂 Express  🧠 Mock ML  📡 Axios 📊 Prometheus  📈 Grafana  🐳 Docker  🧱 Docker Compose"
   },
+  {
+  title: "Trade Matching System",
+  imgSrc: "./assets/tradeMatchingSystem.png",
+  githubLink: "https://github.com/jinaldave3/tradeMatchingSystem",
+  readMore: "./projects/tradeMatchingSystem.html",
+  technologies:
+    "☕ Java 🧵 Multithreading 📡 FIX Messaging 🛢 Data Processing ⚙ Concurrent Queues 📊 Reporting System 🖥 Monitoring Services"
+},
   {
     title: "Bitcoin Price Tracker",
     imgSrc: "./assets/bitcoin.png",

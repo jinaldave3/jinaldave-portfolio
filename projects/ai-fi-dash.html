@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Financial Insights Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="/index.html">Jinal Dave</a>
+      </div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Jinal Dave</div>
+
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="project-paper">
+      <h1 class="title">
+        AI Financial Insights Dashboard: A Full-Stack Fintech Web Application
+      </h1>
+
+      <div class="paper-content">
+        <p>
+          The <strong>AI Financial Insights Dashboard</strong> is a modern
+          fintech-style web application designed to provide users with
+          <strong>real-time stock market data</strong>,
+          <strong>AI-generated insights</strong>, and
+          <strong>interactive financial visualizations</strong>.
+        </p>
+
+        <p>
+          The platform combines live financial APIs with AI-powered analysis to
+          help users quickly understand stock performance, market sentiment, and
+          trending financial news through a clean and responsive dashboard
+          experience.
+        </p>
+
+        <h2>🎯 Objectives</h2>
+
+        <ul>
+          <li>
+            📈 Provide a modern dashboard for viewing real-time stock market
+            information.
+          </li>
+
+          <li>
+            📰 Deliver live company-specific financial news and market updates.
+          </li>
+
+          <li>
+            🤖 Generate AI-powered market insights and stock summaries.
+          </li>
+
+          <li>
+            📊 Visualize historical stock performance using interactive charts.
+          </li>
+
+          <li>
+            🎨 Create a polished fintech-inspired user experience.
+          </li>
+        </ul>
+
+        <h2>🛠️ Technologies Used</h2>
+
+        <h3>🖥️ Frontend Development</h3>
+
+        <ul>
+          <li>
+            ⚛️ <strong>React.js</strong> – Component-based frontend
+            architecture.
+          </li>
+
+          <li>
+            🎨 <strong>Tailwind CSS</strong> – Responsive fintech-style UI
+            design.
+          </li>
+
+          <li>
+            📡 <strong>Axios</strong> – Handles frontend API requests.
+          </li>
+
+          <li>
+            📈 <strong>Recharts</strong> – Interactive stock price chart
+            visualizations.
+          </li>
+
+          <li>
+            ⚡ <strong>Vite</strong> – Fast frontend build and development
+            tooling.
+          </li>
+        </ul>
+
+        <h3>🌍 Backend & APIs</h3>
+
+        <ul>
+          <li>
+            🟢 <strong>Node.js</strong> – Backend runtime environment.
+          </li>
+
+          <li>
+            🚂 <strong>Express.js</strong> – REST API backend server.
+          </li>
+
+          <li>
+            💹 <strong>Finnhub API</strong> – Real-time stock quotes, company
+            profiles, and financial news.
+          </li>
+
+          <li>
+            📊 <strong>Yahoo Finance API</strong> – Historical stock chart
+            data.
+          </li>
+
+          <li>
+            🤖 <strong>OpenAI API</strong> – AI-generated stock insights and
+            summaries.
+          </li>
+        </ul>
+
+        <h2>📂 Project Structure</h2>
+
+        <h3>🖥️ Frontend Components</h3>
+
+        <ul>
+          <li>
+            🏠 <strong>App.jsx</strong> – Main dashboard UI and state
+            management.
+          </li>
+
+          <li>
+            🔍 <strong>SearchBar.jsx</strong> – Stock ticker search
+            functionality.
+          </li>
+
+          <li>
+            📈 <strong>PriceChart.jsx</strong> – Interactive stock chart
+            rendering.
+          </li>
+
+          <li>
+            📰 <strong>NewsList.jsx</strong> – Displays real-time financial
+            news.
+          </li>
+
+          <li>
+            📊 <strong>KPIGrid.jsx</strong> – Market metrics and stock KPIs.
+          </li>
+
+          <li>
+            🤖 <strong>InsightCard.jsx</strong> – AI-generated market insight
+            display.
+          </li>
+        </ul>
+
+        <h3>🖧 Backend Services</h3>
+
+        <ul>
+          <li>
+            🌍 <strong>stocks.js</strong> – Backend routes for stock dashboard
+            data.
+          </li>
+
+          <li>
+            📡 <strong>stockService.js</strong> – Handles financial API
+            integrations.
+          </li>
+
+          <li>
+            🤖 <strong>aiService.js</strong> – Generates AI-powered market
+            analysis.
+          </li>
+
+          <li>
+            ⚙️ <strong>index.js</strong> – Express server configuration.
+          </li>
+        </ul>
+
+        <h2>🚀 Features & Functionality</h2>
+
+        <ul>
+          <li>
+            🔍 <strong>Real-Time Stock Search</strong> – Search and analyze US
+            stock tickers dynamically.
+          </li>
+
+          <li>
+            📈 <strong>Interactive Market Charts</strong> – Visualize historical
+            stock performance.
+          </li>
+
+          <li>
+            📰 <strong>Live Financial News Feed</strong> – Fetch latest
+            company-specific market news.
+          </li>
+
+          <li>
+            🤖 <strong>AI-Powered Insights</strong> – Generate stock summaries,
+            risks, and opportunities.
+          </li>
+
+          <li>
+            🎨 <strong>Modern Fintech UI</strong> – Responsive dashboard with
+            polished user experience.
+          </li>
+
+          <li>
+            ⚡ <strong>API Integration Architecture</strong> – Combines multiple
+            financial APIs into a unified dashboard.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+
+          <p>
+            <a href="mailto:jinaldave03@gmail.com">
+              jinaldave03@gmail.com
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+
+          <p>
+            <a href="https://www.linkedin.com/in/jinal-dave-75594b247/">
+              LinkedIn
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#experience">Experience</a></li>
+            <li><a href="/index.html#projects">Projects</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <p>Copyright &#169; 2025 Jinal Dave. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

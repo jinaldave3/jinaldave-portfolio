@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade Matching & Affirmation System</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="/index.html">Jinal Dave</a>
+      </div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Jinal Dave</div>
+
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="project-paper">
+      <h1 class="title">
+        Trade Matching & Affirmation System: A Java-Based Financial Trading Platform
+      </h1>
+
+      <div class="paper-content">
+        <p>
+          The <strong>Trade Matching & Affirmation System</strong> is a
+          Java-based financial trading application designed to simulate
+          institutional trade processing workflows used in modern capital
+          markets and financial systems.
+        </p>
+
+        <p>
+          The platform processes incoming trade data, performs trade matching,
+          generates reporting data, and simulates FIX-based communication
+          between trading services through a modular service-oriented
+          architecture.
+        </p>
+
+        <h2>🎯 Objectives</h2>
+
+        <ul>
+          <li>
+            📡 Simulate institutional trade ingestion and processing workflows.
+          </li>
+
+          <li>
+            ⚙️ Build a modular backend trading system using Java services.
+          </li>
+
+          <li>
+            📊 Generate reporting and monitoring capabilities for trade events.
+          </li>
+
+          <li>
+            🧵 Implement concurrent trade queue processing.
+          </li>
+
+          <li>
+            💹 Demonstrate financial systems engineering concepts.
+          </li>
+        </ul>
+
+        <h2>🛠️ Technologies Used</h2>
+
+        <h3>☕ Backend Development</h3>
+
+        <ul>
+          <li>
+            ☕ <strong>Java</strong> – Core backend system implementation.
+          </li>
+
+          <li>
+            🧵 <strong>LinkedBlockingQueue</strong> – Concurrent trade ingestion
+            and queue management.
+          </li>
+
+          <li>
+            📦 <strong>HashMap</strong> – Trade book and reporting storage.
+          </li>
+
+          <li>
+            ⚙️ <strong>Service-Oriented Architecture</strong> – Modular
+            separation of trading services.
+          </li>
+        </ul>
+
+        <h3>💹 Financial Systems Concepts</h3>
+
+        <ul>
+          <li>
+            📡 <strong>FIX Messaging Simulation</strong> – Simulates trade
+            communication workflows.
+          </li>
+
+          <li>
+            📊 <strong>Trade Matching Engine</strong> – Processes and stores
+            trade events.
+          </li>
+
+          <li>
+            🖥 <strong>Monitoring Services</strong> – Tracks system activity.
+          </li>
+
+          <li>
+            📈 <strong>Reporting Services</strong> – Generates trade reports.
+          </li>
+        </ul>
+
+        <h2>📂 Project Structure</h2>
+
+        <h3>⚙️ Core Services</h3>
+
+        <ul>
+          <li>
+            📥 <strong>TradeDataIngestionService.java</strong> – Handles trade
+            ingestion and queue processing.
+          </li>
+
+          <li>
+            💹 <strong>TradeMatchingEngine.java</strong> – Processes and matches
+            incoming trades.
+          </li>
+
+          <li>
+            📡 <strong>CommunicationService.java</strong> – Simulates FIX
+            messaging communication.
+          </li>
+
+          <li>
+            📊 <strong>ReportingService.java</strong> – Generates trade reports
+            and stores reporting data.
+          </li>
+
+          <li>
+            🖥 <strong>MonitoringService.java</strong> – Monitors system state
+            and lifecycle.
+          </li>
+
+          <li>
+            🚀 <strong>MainApplication.java</strong> – Initializes and manages
+            the trading platform.
+          </li>
+        </ul>
+
+        <h2>🚀 Features & Functionality</h2>
+
+        <ul>
+          <li>
+            📥 <strong>Trade Data Ingestion</strong> – Processes incoming trade
+            events dynamically.
+          </li>
+
+          <li>
+            💹 <strong>Trade Matching Engine</strong> – Simulates trade matching
+            workflows.
+          </li>
+
+          <li>
+            📡 <strong>FIX Message Simulation</strong> – Sends simulated trade
+            confirmation messages.
+          </li>
+
+          <li>
+            📊 <strong>Reporting System</strong> – Generates and stores trade
+            reports.
+          </li>
+
+          <li>
+            🖥 <strong>Monitoring Services</strong> – Tracks system startup and
+            shutdown events.
+          </li>
+
+          <li>
+            🧵 <strong>Concurrent Queue Processing</strong> – Uses Java
+            concurrent collections for scalable ingestion handling.
+          </li>
+        </ul>
+
+        <h2>🔮 Future Improvements</h2>
+
+        <ul>
+          <li>📈 Real-time streaming trade processing.</li>
+
+          <li>🗄 Database persistence for trade storage.</li>
+
+          <li>🌍 Distributed microservices architecture.</li>
+
+          <li>🔔 Real-time monitoring dashboard.</li>
+
+          <li>⚡ Kafka or RabbitMQ integration.</li>
+
+          <li>☁ Cloud deployment and containerization.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+
+          <p>
+            <a href="mailto:jinaldave03@gmail.com">
+              jinaldave03@gmail.com
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+
+          <p>
+            <a href="https://www.linkedin.com/in/jinal-dave-75594b247/">
+              LinkedIn
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#experience">Experience</a></li>
+            <li><a href="/index.html#projects">Projects</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <p>Copyright &#169; 2025 Jinal Dave. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
