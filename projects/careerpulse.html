@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPulse</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="/index.html">Jinal Dave</a>
+      </div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Jinal Dave</div>
+
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="project-paper">
+      <h1 class="title">
+        CareerPulse: An AI-Powered Career Intelligence Platform
+      </h1>
+
+      <div class="paper-content">
+        <p>
+          <strong>CareerPulse</strong> is a full-stack career intelligence
+          platform designed to help users understand hiring trends, identify
+          in-demand skills, analyze resumes, discover visa-friendly companies,
+          and receive personalized AI-powered career recommendations.
+        </p>
+
+        <p>
+          The platform combines live job market data, career news, resume
+          analysis, and AI-generated guidance to help users make smarter,
+          data-driven career decisions.
+        </p>
+
+        <h2>🎯 Objectives</h2>
+
+        <ul>
+          <li>📊 Analyze job market trends and skill demand.</li>
+          <li>🤖 Provide AI-powered career recommendations.</li>
+          <li>📄 Identify resume skill gaps and improvement areas.</li>
+          <li>🌎 Highlight visa-friendly companies and hiring opportunities.</li>
+          <li>📰 Display career market news and industry updates.</li>
+          <li>🎨 Build a polished, modern dashboard-style user experience.</li>
+        </ul>
+
+        <h2>🛠️ Technologies Used</h2>
+
+        <h3>🖥️ Frontend Development</h3>
+
+        <ul>
+          <li>⚛️ <strong>React.js</strong> – Component-based frontend architecture.</li>
+          <li>⚡ <strong>Vite</strong> – Fast development and build tooling.</li>
+          <li>📡 <strong>Axios</strong> – Handles frontend API requests.</li>
+          <li>📈 <strong>Recharts</strong> – Interactive analytics visualizations.</li>
+          <li>🎨 <strong>CSS3</strong> – Responsive custom UI styling.</li>
+        </ul>
+
+        <h3>🌍 Backend & APIs</h3>
+
+        <ul>
+          <li>🟢 <strong>Node.js</strong> – Backend runtime environment.</li>
+          <li>🚂 <strong>Express.js</strong> – REST API backend server.</li>
+          <li>🤖 <strong>OpenAI API</strong> – AI career advisor and recommendations.</li>
+          <li>🔍 <strong>JSearch API</strong> – Live job market data through RapidAPI.</li>
+          <li>📰 <strong>NewsAPI</strong> – Career market and technology news.</li>
+          <li>🔐 <strong>JWT</strong> – Authentication and session handling.</li>
+        </ul>
+
+        <h3>📊 Data Engineering & DevOps</h3>
+
+        <ul>
+          <li>🐘 <strong>PostgreSQL</strong> – Relational database schema design.</li>
+          <li>🐍 <strong>Python</strong> – ETL pipeline starter logic.</li>
+          <li>🌬️ <strong>Apache Airflow</strong> – Pipeline orchestration structure.</li>
+          <li>📦 <strong>dbt</strong> – Analytics transformation models.</li>
+          <li>🐳 <strong>Docker</strong> – Containerized application setup.</li>
+          <li>🔄 <strong>GitHub Actions</strong> – CI/CD workflow configuration.</li>
+        </ul>
+
+        <h2>📂 Project Structure</h2>
+
+        <h3>🖥️ Frontend Pages & Components</h3>
+
+        <ul>
+          <li>🏠 <strong>Home Page</strong> – Overview metrics and navigation cards.</li>
+          <li>📈 <strong>Market Insights</strong> – Skill demand, salary, location, and industry analytics.</li>
+          <li>📄 <strong>Resume Analyzer</strong> – Resume parsing and skill gap analysis.</li>
+          <li>🤖 <strong>AI Career Advisor</strong> – Personalized AI-generated career guidance.</li>
+          <li>🌎 <strong>Visa Watchlist</strong> – Visa-friendly company and role discovery.</li>
+          <li>📰 <strong>Career News</strong> – Technology hiring and market news.</li>
+        </ul>
+
+        <h3>🖧 Backend Services</h3>
+
+        <ul>
+          <li>📊 <strong>analyticsService.js</strong> – Calculates trends, distributions, and market summaries.</li>
+          <li>🔍 <strong>jobDataService.js</strong> – Fetches and normalizes live job market data.</li>
+          <li>🤖 <strong>advisorService.js</strong> – Sends career context to OpenAI for recommendations.</li>
+          <li>📄 <strong>resumeService.js</strong> – Extracts skills from resume text.</li>
+          <li>📰 <strong>newsService.js</strong> – Fetches career and technology news.</li>
+          <li>⚙️ <strong>server.js</strong> – Express server configuration.</li>
+        </ul>
+
+        <h2>🚀 Features & Functionality</h2>
+
+        <ul>
+          <li>📊 <strong>Market Analytics Dashboard</strong> – Tracks hiring trends, skill demand, salaries, locations, and industries.</li>
+          <li>📈 <strong>Skill Demand Index</strong> – Identifies the most requested skills across job postings.</li>
+          <li>⚡ <strong>Skill Momentum Index</strong> – Compares current skill trends with prior market data.</li>
+          <li>📄 <strong>Resume Gap Analysis</strong> – Compares user skills against market demand.</li>
+          <li>🤖 <strong>AI Career Advisor</strong> – Generates personalized career recommendations.</li>
+          <li>🌎 <strong>Visa-Friendly Company Watchlist</strong> – Detects companies and roles that may support international candidates.</li>
+          <li>📰 <strong>Career Market News</strong> – Displays recent news affecting technology hiring and career trends.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+
+          <p>
+            <a href="mailto:jinaldave03@gmail.com">
+              jinaldave03@gmail.com
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+
+          <p>
+            <a href="https://www.linkedin.com/in/jinal-dave-75594b247/">
+              LinkedIn
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#experience">Experience</a></li>
+            <li><a href="/index.html#projects">Projects</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <p>Copyright &#169; 2025 Jinal Dave. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
