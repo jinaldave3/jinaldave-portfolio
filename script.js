@@ -7,6 +7,14 @@ function toggleMenu() {
 
 const projects = [
   {
+  title: "CareerPulse",
+  imgSrc: "./assets/careerpulse.png",
+  githubLink: "https://github.com/jinaldave3/careerpulse",
+  readMore: "./projects/careerpulse.html",
+  technologies:
+    "⚛ React.js 🟢 Node.js 🚂 Express.js 🐘 PostgreSQL 🤖 OpenAI API 🔍 JSearch API 📰 NewsAPI 📊 Recharts 🐳 Docker 🔄 GitHub Actions"
+},
+  {
   title: "AI Financial Insights Dashboard",
   imgSrc: "./assets/ai-fi-dash.png",
   githubLink: "https://github.com/jinaldave3/ai-fi-dash",
