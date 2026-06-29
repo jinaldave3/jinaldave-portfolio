@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelSync</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="/index.html">Jinal Dave</a>
+      </div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Jinal Dave</div>
+
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="project-paper">
+      <h1 class="title">
+        TravelSync: A Smart Travel, Event & Networking Planner
+      </h1>
+
+      <div class="paper-content">
+        <p>
+          <strong>TravelSync</strong> is a full-stack travel planning platform
+          designed to help users create trips, discover events, explore places,
+          manage networking contacts, and generate AI-powered travel plans.
+        </p>
+
+        <p>
+          The platform solves the problem of fragmented travel planning by
+          combining trip organization, event discovery, destination research,
+          networking follow-ups, and AI itinerary generation into one
+          centralized dashboard.
+        </p>
+
+        <h2>🎯 Objectives</h2>
+
+        <ul>
+          <li>🧭 Create and manage trips with dates, purpose, budget, and notes.</li>
+          <li>🎫 Discover local events near a destination using live event data.</li>
+          <li>📍 Explore restaurants, attractions, museums, hotels, parks, and cafes.</li>
+          <li>🤝 Track networking contacts and follow-up status after events.</li>
+          <li>🤖 Generate AI-powered travel plans, packing lists, and event strategies.</li>
+          <li>📌 Save places, events, and AI-generated plans into existing trips.</li>
+        </ul>
+
+        <h2>🛠️ Technologies Used</h2>
+
+        <h3>🖥️ Frontend Development</h3>
+
+        <ul>
+          <li>⚛️ <strong>React.js</strong> – Component-based frontend architecture.</li>
+          <li>⚡ <strong>Vite</strong> – Fast frontend development and build tooling.</li>
+          <li>📡 <strong>Axios</strong> – Handles frontend-to-backend API requests.</li>
+          <li>🎨 <strong>CSS3</strong> – Custom responsive SaaS-style interface.</li>
+          <li>🧩 <strong>State Management</strong> – Manages trips, contacts, places, events, and AI output.</li>
+        </ul>
+
+        <h3>🌍 Backend & APIs</h3>
+
+        <ul>
+          <li>🟢 <strong>Node.js</strong> – Backend runtime environment.</li>
+          <li>🚂 <strong>Express.js</strong> – REST API backend server.</li>
+          <li>🤖 <strong>OpenAI API</strong> – AI itinerary generation and travel recommendations.</li>
+          <li>🎫 <strong>Ticketmaster Discovery API</strong> – Live event discovery by city and keyword.</li>
+          <li>📍 <strong>Geoapify Places API</strong> – Destination search for attractions, restaurants, hotels, parks, and more.</li>
+        </ul>
+
+        <h3>📊 Data Engineering & DevOps</h3>
+
+        <ul>
+          <li>🐘 <strong>PostgreSQL Schema</strong> – Structured data model for trips, itinerary items, contacts, and saved places.</li>
+          <li>🐍 <strong>Python ETL Starter</strong> – Data transformation starter for travel and event analytics.</li>
+          <li>🌬️ <strong>Apache Airflow</strong> – Pipeline orchestration structure.</li>
+          <li>🐳 <strong>Docker</strong> – Containerized application setup.</li>
+          <li>🔄 <strong>GitHub Actions</strong> – CI workflow for frontend and backend checks.</li>
+        </ul>
+
+        <h2>📂 Project Structure</h2>
+
+        <h3>🖥️ Frontend Pages</h3>
+
+        <ul>
+          <li>🏠 <strong>Home Dashboard</strong> – Displays trip stats, itinerary count, contacts, and follow-ups.</li>
+          <li>🧭 <strong>Trips</strong> – Create trips, edit trip details, add notes, and view saved itinerary items.</li>
+          <li>🎫 <strong>Events</strong> – Search live events and add selected events to existing trips.</li>
+          <li>📍 <strong>Places</strong> – Search places by destination and category, view details, and add places to trips.</li>
+          <li>🤝 <strong>Network</strong> – Save networking contacts and update follow-up status.</li>
+          <li>🤖 <strong>AI Assistant</strong> – Generate travel plans and save them into existing trips.</li>
+        </ul>
+
+        <h3>🖧 Backend Services</h3>
+
+        <ul>
+          <li>🧭 <strong>trips.js</strong> – Handles trip creation, editing, and itinerary saving.</li>
+          <li>🎫 <strong>eventService.js</strong> – Fetches live event data from Ticketmaster.</li>
+          <li>📍 <strong>placesService.js</strong> – Fetches destination places from Geoapify.</li>
+          <li>🤖 <strong>aiService.js</strong> – Sends travel planning prompts to OpenAI.</li>
+          <li>🤝 <strong>contacts.js</strong> – Manages networking contacts and follow-up statuses.</li>
+          <li>📊 <strong>analyticsService.js</strong> – Calculates dashboard metrics.</li>
+        </ul>
+
+        <h2>🚀 Features & Functionality</h2>
+
+        <ul>
+          <li>🧭 <strong>Trip Creation & Editing</strong> – Users can create trips, update details, and add notes.</li>
+          <li>📌 <strong>Saved Itinerary Items</strong> – Places, events, and AI plans can be saved into trips.</li>
+          <li>🎫 <strong>Live Event Discovery</strong> – Users can search events by destination and keyword.</li>
+          <li>📍 <strong>Places Explorer</strong> – Users can find attractions, restaurants, cafes, museums, hotels, airports, and parks.</li>
+          <li>🤝 <strong>Networking CRM</strong> – Users can save contacts and track follow-up progress.</li>
+          <li>🤖 <strong>AI Travel Assistant</strong> – Generates itinerary suggestions, packing lists, and travel strategies.</li>
+          <li>🛡️ <strong>Graceful API Handling</strong> – Provides clear user-facing messages when APIs are unavailable or quota-limited.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+
+          <p>
+            <a href="mailto:jinaldave03@gmail.com">
+              jinaldave03@gmail.com
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+
+          <p>
+            <a href="https://www.linkedin.com/in/jinal-dave-75594b247/">
+              LinkedIn
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#experience">Experience</a></li>
+            <li><a href="/index.html#projects">Projects</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <p>Copyright &#169; 2025 Jinal Dave. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

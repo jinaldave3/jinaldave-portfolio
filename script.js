@@ -7,6 +7,14 @@ function toggleMenu() {
 
 const projects = [
   {
+  title: "TravelSync",
+  imgSrc: "./assets/travelsync.png",
+  githubLink: "https://github.com/jinaldave3/travelsync",
+  readMore: "./projects/travelsync.html",
+  technologies:
+    "⚛ React.js ⚡ Vite 🟢 Node.js 🚂 Express.js 🤖 OpenAI API 🎫 Ticketmaster API 📍 Geoapify API 🧭 Trip Planning 🤝 Networking CRM 🐳 Docker 🔄 GitHub Actions"
+  },
+  {
   title: "CareerPulse",
   imgSrc: "./assets/careerpulse.png",
   githubLink: "https://github.com/jinaldave3/careerpulse",
