@@ -1,103 +1,396 @@
+/* =========================
+   LARGE DESKTOPS
+   ========================= */
+
 @media screen and (min-width: 1400px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
   }
-  .about-containers {
-    flex-wrap: wrap;
-  }
+
   #contact,
   #projects {
     height: fit-content;
   }
+
+  .about-layout {
+    width: min(1280px, 88vw);
+  }
 }
+
+/* =========================
+   TABLETS / SMALL LAPTOPS
+   ========================= */
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
+
+  section {
+    height: fit-content;
+    margin: 0 5%;
   }
+
   #profile,
   .section-container {
     display: block;
   }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
   .arrow {
     display: none;
   }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
+
   .section__pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
+
+  /* ABOUT */
+
+  #about {
+    padding-top: 2.5rem;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    width: min(780px, 90vw);
+    margin-top: 2.5rem;
+  }
+
+  .about-profile-column {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1fr);
+    align-items: stretch;
+  }
+
+  .about-image-wrapper {
+    height: 100%;
+  }
+
+  .about-image {
+    height: 100%;
+    min-height: 430px;
+  }
+
+  .about-intro-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .education-card h3 {
+    font-size: 1.6rem;
+  }
+
   .about-containers {
     margin-top: 0;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+/* =========================
+   MOBILE / SMALL TABLETS
+   ========================= */
+
+@media screen and (max-width: 700px) {
+  nav {
+    height: 12vh;
   }
+
   #profile {
-    height: 83vh;
+    height: auto;
+    min-height: 83vh;
     margin-bottom: 0;
+    padding-top: 2rem;
   }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
+
   .section__pic-container {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
+
   .section__text__p2 {
     font-size: 1.25rem;
   }
+
   .title {
     font-size: 2rem;
   }
+
+  /* ABOUT */
+
+  #about {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .about-layout {
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+
+  .about-profile-column {
+    display: flex;
+  }
+
+  .about-image {
+    height: auto;
+    min-height: 0;
+  }
+
+  .about-intro-card,
+  .education-card {
+    padding: 1.35rem;
+    border-radius: 1.35rem;
+  }
+
+  .education-card h3 {
+    font-size: 1.35rem;
+  }
+
+  .engineering-values {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    padding: 1rem 1.1rem;
+  }
+
+  /* GENERAL */
+
+  article {
+    font-size: 1rem;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-container {
+    margin: 0;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
   .text-container {
-    text-align: justify;
+    text-align: left;
+  }
+
+  #contact,
+  footer {
+    height: auto;
+    min-height: 40vh;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+}
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
+@media screen and (max-width: 430px) {
+  section {
+    margin: 0 1rem;
+  }
+
+  .availability-badge {
+    right: 0.65rem;
+    bottom: 0.65rem;
+    left: 0.65rem;
+    padding: 0.65rem 0.75rem;
+    font-size: 0.68rem;
+  }
+
+  .about-intro-card,
+  .education-card {
+    padding: 1.15rem;
+    border-radius: 1.2rem;
+  }
+
+  .about-intro-card h2 {
+    font-size: 1.35rem;
+  }
+
+  .about-summary {
+    font-size: 0.84rem;
+  }
+
+  .education-card-header {
+    margin-bottom: 0.8rem;
+  }
+
+  .education-icon {
+    width: 2.65rem;
+    height: 2.65rem;
+    border-radius: 0.8rem;
+  }
+
+  .education-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .school-name {
+    font-size: 0.9rem;
+  }
+
+  .about-focus-tags span,
+  .education-tags span,
+  .honors-list span {
+    padding: 0.42rem 0.62rem;
+    font-size: 0.68rem;
+  }
+
+  .engineering-values {
+    gap: 0.65rem;
+  }
+
+  .value-card h4 {
+    font-size: 0.84rem;
+  }
+
+  .value-card p {
+    font-size: 0.72rem;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* =========================
+   EXPERIENCE DASHBOARD
+   ========================= */
+
+@media screen and (max-width: 900px) {
+  .exp-dashboard {
+    width: min(760px, 92vw);
+  }
+
+  .rings {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .role {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #experience {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .exp-dashboard {
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .focus-panel,
+  .role,
+  .stat,
+  .mini-card,
+  .foundation {
+    border-radius: 1.25rem;
+  }
+
+  .focus-panel,
+  .role {
+    padding: 1.35rem;
+  }
+
+  .rings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats,
+  .mini-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .role h2 {
+    font-size: 1.3rem;
+  }
+
+  .role > p {
+    font-size: 0.84rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .focus-panel {
+    padding: 1.15rem;
+  }
+
+  .rings {
+    gap: 1rem 0.5rem;
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .circle::after {
+    inset: 8px;
+  }
+
+  .ring {
+    font-size: 0.75rem;
+  }
+
+  .stat {
+    padding: 1.15rem;
+  }
+
+  .role,
+  .mini-card,
+  .foundation {
+    padding: 1.15rem;
+  }
+
+  .tags span {
+    padding: 0.4rem 0.62rem;
+    font-size: 0.67rem;
+  }
+
+  #experience details li {
+    font-size: 0.76rem;
   }
 }
